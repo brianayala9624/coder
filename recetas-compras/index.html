@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imgs/favicon.svg">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Styles css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comidas.css">
+    
+    <title>Recetas</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark   menu shadow">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><img src="../imgs/logo1.png "   alt="Logo Infopelis"
+          /></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../recetas-compras/">RECETAS</a>
+
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="../calculadora/">CALCULADORA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../comidas/">Usuario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contacto/">CONTACTO</a>
+            </li>
+                            
+          </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+<div class="col-12">
+    <div class="cart">
+        <i class="fa fa-shopping-basket fa-2x"></i>
+        <i class="fa fa-caret-down"></i><br>
+        <div class="total-text">
+            <p>Productos</p>
+            <p id="items-basket"></p>
+        </div>
+    </div>
+    <div class="centrar">
+        <div id="cart-items">
+            <ol id="list-item">
+            </ol>
+    
+            <div class="total-text">
+                    <p>Total: </p>
+                    <p id="total-price"></p>
+            </div>
+            
+        </div>
+
+    </div>
+   
+
+</div>
+
+
+    <main>
+
+
+        <div class="centrar">
+            <div class="contenido  row">       
+              <div class="col">
+                <div class="card mb-3  cardWhite" >
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="../imagenes-box/12.jpg" class="img-fluid "   alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body ">
+                        <h5 class="card-title">ENSALADA CON NARANAJA, QUESO Y PISTACHOS</h5>
+                        <p class="card-text">INGREDIENTES: 9
+                           PERSONAS: 4
+                           <br>
+                            TIEMPO 20 MIN <a class="ver-mas" id="ver-ocultar-receta-3" onclick="vermas('receta-oculta-1','ver-ocultar-receta-1')">Ver Mas</a>
+                          
+                        </p>
+                        <div class="centrar item">  <h5 style="display: none;">ENSALADA CON NARANAJA, QUESO Y PISTACHOS</h5>
+                             <p class="precio">Precio:$</p> 
+                            <p class="price">700</p>
+                            <button class="btn-comprar">comprar</button> </div>
+                       
+                       
+                      </div>
+                    </div>
+                  </div>
+              </div>
+    
+              </div>
+              <div class="col">
+                <div class="card mb-3  cardBlack" >
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                      <img src="../imagenes-box/2.jpg" class="img-fluid " alt="...">
+                      </div>
+                      <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title ">ENSALADA SENCILLA Y SALUDABLE CON AGUACATE</h5>
+                          <p class="card-text">INGREDIENTES: 11 
+                            PERSONAS: 4 <br> 
+                            TIEMPO 35 MIN <a class="ver-mas" id="ver-ocultar-receta-3" onclick="vermas('receta-oculta-2','ver-ocultar-receta-2')">Ver Mas</a>
+  
+                          </p>
+                          <div class="centrar item">
+                            <h5 style="display: none;">ENSALADA SENCILLA Y SALUDABLE CON AGUACATE</h5>
+                               <p class="precio">Precio:$</p>
+                             <p class="price">850</p>
+                             <button class="btn-comprar">comprar</button> </div>
+                       
+                        
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                
+    
+              </div> 
+              <div class="col">
+                <div class="card mb-3  cardWhite" >
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                      <img src="../imagenes-box/3.jpg" class="img-fluid " alt="...">
+                      </div>
+                      <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">CARPACCIO DE PEPINO CON SARDINAS</h5>
+                          <p class="card-text">INGREDIENTES:10 <br>
+                             PERSONAS 4 <br>
+                             TIEMPO 35 MIN <a class="ver-mas" id="ver-ocultar-receta-3" onclick="vermas('receta-oculta-3','ver-ocultar-receta-3')">Ver Mas</a>
+                            </p>
+                            <div class="centrar item">
+                                <h5 style="display: none;">CARPACCIO DE PEPINO CON SARDINAS</h5>
+                                 <p class="precio">Precio:$</p> 
+                                <p class="price">790</p>
+                                <button class="btn-comprar">comprar</button> </div>
+                       
+
+                         
+                      </div>
+                      </div>
+                  </div>
+                 
+              </div>
+              </div>
+           </div>
+           
+      
+          </div>
+          <div  id="receta-oculta-1" style="display: none;">
+            <p>
+                INGREDIENTES: <br>
+                200 g de escarola
+                50 g de rúcula (sustituye escarola y rúcula por la lechuga que tengas)
+                2 naranjas
+                300 g de rulo de queso de cabra (rebaja calorías con queso fresco)
+                50 g de pistachos
+                5 cucharadas de aceite de oliva virgen
+                1 cucharada de vinagre de jerez
+                Sal
+                Cebollino (opcional)
+
+                
+
+                PREPARACIÓN:
+                1. Trocea, lava y seca la escarola. Lava y seca la rúcula.
+                2. Corta una naranja y media en gajos y retira la piel. Exprime la mitad restante para extraer el zumo.
+                3. Lava, seca y pica el cebollino.
+                4. Pela y pica los pistachos.
+                5. Prepara la vinagreta mezclando cuatro cucharadas de aceite con el vinagre, dos cucharadas de zumo de naranja, una pizca de sal y dos cucharadas de cebollino picado.
+                6. Retira la corteza del rulo de queso de cabra, corta el queso en trozos, úntate las manos con aceite para formar bolitas y rebózalas con los pistachos picados.
+                7. Reparte los ingredientes en los platos y aliña con la vinagreta.
+            </p>
+        </div>
+          <div  id="receta-oculta-2" style="display: none;">
+            <p> INGREDIENTES: <br>
+                1 bolsa de brotes tiernos
+                8 fresones
+                32 fresas
+                16 tomates cherry
+                1 aguacate
+                1 dátil
+                1/2 limón
+                1 naranja
+                1 cucharada de aceite de oliva
+                1 cucharada de semillas de amapola
+                Pimienta negra recién molida
+
+                
+
+                PREPARACIÓN:
+                1. Exprime la naranja y mezcla su zumo, el aceite de oliva, el dátil sin semilla y un pellizquito de pimienta negra recién molida en la batidora. Bate hasta obtener una mezcla suave y añade las semillas de amapola al final.
+                2. Pela el aguacate, retírale el hueso y corta su pulpa en cubitos de unos 2 cm. Rocíalos con zumo de limón para que no se oxiden.
+                3. Corta los tomates cherry en mitades y los fresones en mitades o cuartos, dependiendo del tamaño que tengan.
+                4. Monta los platos. Divide mentalmente el plato en 4 partes, como si fuera la esfera de un reloj, y pon en una los brotes tiernos de ensalada, en otra los tomates, en otra los fresones y en otra el aguacate. Decora la ensalada con las fresas y acompáñala de la vinagreta de naranja con semillas de amapola.
+            </p>
+        </div>
+          <div  id="receta-oculta-3" style="display: none;">
+            <p>
+                INGREDIENTES: <br>
+            2 pepinos
+            12 sardinas limpias y partidas en filetes
+            75 g de queso de cabra o feta
+            1 limón
+            Pimienta
+            Para la vinagreta:
+            6 cucharadas de aceite de oliva
+            2 cucharadas de vinagre de Jerez
+            Alcaparras
+            1 ramita de menta
+            Sal
+
+            
+
+            PREPARACIÓN:
+            1. Lava las sardinas, ponlas en una fuente y rocíalas con el zumo del limón. Tápalas con film transparente y déjalas macerar en la nevera durante 3 h. Puedes optar por sardinas o sardinillas en aceite o limón en conserva.
+            2. Mientras, prepara la vinagreta: bate el aceite con el vinagre y una pizca de sal hasta obtener una salsa. Añade la menta picada y 2 cucharadas de alcaparras.
+            3. Lava el pepino, córtalo en rodajas finas (con cuchillo y paciencia o con mandolina) y colócalas en un plato, superponiéndolas.
+            4. Escurre las sardinas, trocéalas y añádelas.
+            5. Aromatiza con pimienta, aliña con la vinagreta y sírvelo espolvoreado con el queso.
+
+            </p>  
+        </div>
+
+        
+
+        
+    </main>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="rgb(63, 62, 62)" fill-opacity="1" d="M0,192L120,197.3C240,203,480,213,720,186.7C960,160,1200,96,1320,64L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+        </svg>
+      </div>
+      <i  class="fa-solid fa-circle-x"></i>
+      <footer class=" footer mt-auto text-white-50">
+        <div class="centrar">
+          <div class="descargas">
+            <a href="https://play.google.com/store/">
+              <img src="../imgs/android1.png" class="descargas-imagen"alt="">
+            </a>       
+          </div>
+          <div class="descargas">
+            <a href="https://www.apple.com/la/app-store/">
+              <img src="../imgs/appstore1.png "  class="descargas-imagen" alt="">
+            </a>          
+          </div>
+        </div>
+        <div class="centrar">
+          <p>Creado Por Brian Ayala <a href="https://facebook.com" class="text-white"></a> <a href="https://twitter.com/" class="text-white"></a>.</p>
+  
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/743e10a948.js" crossorigin="anonymous"></script>
+      <script src="https://use.fontawesome.com/a9074f2a41.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="../js/main.js"></script>  
+      <script src="../js/carrito.js"></script>    
+      <script src="../js/home.js"></script>
+</body>
+</html>

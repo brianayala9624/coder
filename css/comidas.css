@@ -1,0 +1,79 @@
+
+#contenedor-comidas {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.formulario {
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+
+input {
+    margin: 30px 0 0 0;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+small {
+    color: red;
+    text-align: center;
+    padding: 10px 0 0;
+    display: none;
+}
+
+small.show {
+    display: block;
+}
+
+.caja-comida {
+    background-color: #EFEFEF;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.caja-comida.hide {
+    display: none;
+}
+
+.caja-comida.seleccionado {
+    background-color: black;
+    color: white;
+}
+
+.caja-comida img {
+    width: 200px;
+    height: 200px;
+}
+
+#formulario{
+    display: none;
+}
+#imagen1{
+    display: none;
+   
+}
+
+.imagenes{
+    text-align: center;
+    display: flex;
+    
+    
+}
+.centrado{
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .boton{
+    margin: 10px;
+    padding: 5px 10px;
+   /* color: rgb(63, 62, 62); */
+ }
